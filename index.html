@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goblin iPhone 17 — $GOBLIN</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0d1a0d; color: #fff; font-family: 'Segoe UI', sans-serif; }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    border-bottom: 1px solid #2a4a2a;
+  }
+  .nav-logo { font-size: 1.5rem; font-weight: 900; color: #4aff4a; }
+  .nav-links a { color: #aaa; text-decoration: none; margin-left: 1.5rem; transition: color 0.2s; }
+  .nav-links a:hover { color: #4aff4a; }
+
+  .hero {
+    position: relative; width: 100%; height: 100vh; overflow: hidden;
+  }
+  .hero img { width: 100%; height: 100%; object-fit: cover; opacity: 0.9; }
+  .hero-overlay {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,20,0,0.9));
+    display: flex; flex-direction: column; align-items: center;
+    justify-content: center; text-align: center; padding: 2rem;
+  }
+  .hero-emoji { font-size: 4rem; margin-bottom: 1rem; }
+  .hero-title { font-size: 4.5rem; font-weight: 900; color: #4aff4a; text-shadow: 0 0 30px #4aff4a; letter-spacing: 4px; }
+  .hero-sub { font-size: 1.5rem; color: #ccc; margin: 1rem 0 2rem; }
+  .hero-tagline { font-size: 1rem; color: #4aff4a; max-width: 600px; line-height: 1.8; font-style: italic; }
+  .btn-group { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; justify-content: center; }
+  .btn { padding: 1rem 2.5rem; border-radius: 8px; font-size: 1rem; font-weight: 700; text-decoration: none; transition: all 0.2s; border: none; cursor: pointer; }
+  .btn-primary { background: #4aff4a; color: #000; }
+  .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 0 20px #4aff4a; }
+  .btn-secondary { background: transparent; color: #4aff4a; border: 2px solid #4aff4a; }
+  .btn-secondary:hover { background: #4aff4a; color: #000; }
+
+  .stats { display: flex; justify-content: center; gap: 3rem; padding: 3rem 2rem; background: #0a150a; flex-wrap: wrap; border-top: 1px solid #2a4a2a; border-bottom: 1px solid #2a4a2a; }
+  .stat { text-align: center; }
+  .stat-num { font-size: 2rem; font-weight: 800; color: #4aff4a; }
+  .stat-label { font-size: 0.9rem; color: #666; margin-top: 0.3rem; }
+
+  .story { padding: 5rem 2rem; max-width: 800px; margin: 0 auto; text-align: center; }
+  .story h2 { font-size: 2.5rem; font-weight: 800; color: #4aff4a; margin-bottom: 3rem; text-shadow: 0 0 20px #4aff4a; }
+  .story p { font-size: 1.1rem; line-height: 2; color: #bbb; margin-bottom: 1.5rem; }
+  .highlight { color: #4aff4a; font-weight: 700; }
+  .goblin-specs {
+    background: #0a150a;
+    border: 1px solid #2a4a2a;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: left;
+  }
+  .goblin-specs h3 { color: #4aff4a; margin-bottom: 1rem; font-size: 1.2rem; }
+  .goblin-specs ul { list-style: none; }
+  .goblin-specs ul li { padding: 0.5rem 0; color: #bbb; border-bottom: 1px solid #1a2a1a; }
+  .goblin-specs ul li::before { content: "☠️ "; }
+
+  .buy { text-align: center; padding: 5rem 2rem; background: #0a150a; }
+  .buy h2 { font-size: 2.5rem; font-weight: 800; color: #4aff4a; margin-bottom: 1rem; text-shadow: 0 0 20px #4aff4a; }
+  .buy p { color: #888; margin-bottom: 2rem; font-size: 1.1rem; }
+
+  footer { text-align: center; padding: 2rem; border-top: 1px solid #2a4a2a; color: #444; font-size: 0.9rem; }
+  footer a { color: #4aff4a; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">👺 $GOBLIN</div>
+  <div class="nav-links">
+    <a href="#story">Story</a>
+    <a href="#buy">Buy</a>
+    <a href="https://x.com/MeltCoinBSC" target="_blank">Twitter</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <img src="111.png" alt="Goblin iPhone 17">
+  <div class="hero-overlay">
+    <div class="hero-emoji">👺</div>
+    <div class="hero-title">GOBLIN 5G</div>
+    <div class="hero-sub">iPhone 17 Pro — Goblin Edition</div>
+    <div class="hero-tagline">
+      "Taken from humans. Used for hunting. Not for sale."<br>
+      But $GOBLIN? $GOBLIN is for everyone.
+    </div>
+    <div class="btn-group">
+      <a href="#buy" class="btn btn-primary">👺 Buy $GOBLIN</a>
+      <a href="#story" class="btn btn-secondary">Read the Tale</a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stat"><div class="stat-num">👺</div><div class="stat-label">Goblin Powered</div></div>
+  <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Taken from Humans</div></div>
+  <div class="stat"><div class="stat-num">0%</div><div class="stat-label">Team Tokens</div></div>
+  <div class="stat"><div class="stat-num">SOL</div><div class="stat-label">Solana Chain</div></div>
+</div>
+
+<section class="story" id="story">
+  <h2>👺 Once Upon a Time...</h2>
+  
+  <p>In the dark forest of Silicon Valley,<br>
+  <span class="highlight">Apple unveiled the iPhone 17 Pro.</span><br>
+  Sleek. Powerful. Precious.</p>
+
+  <p>The goblins watched from the shadows.</p>
+
+  <p style="font-size:2rem; color:#4aff4a; font-weight:900;">"MINE."</p>
+
+  <p>In the dead of night, tiny green hands<br>
+  crept across the valley floor.<br>
+  No alarm could stop them.<br>
+  No Genius Bar could help you now.</p>
+
+  <p>They didn't want to take selfies.<br>
+  They didn't want to call their mom.</p>
+
+  <div class="goblin-specs">
+    <h3>☠️ GOBLIN 5G — Official Specs</h3>
+    <ul>
+      <li>Taken from humans</li>
+      <li>Used for hunting</li>
+      <li>BONE TUNES activated</li>
+      <li>WAR MAP installed</li>
+      <li>FEAST mode: always on</li>
+      <li>Not for sale</li>
+    </ul>
+  </div>
+
+  <p>Deep in the goblin caves,<br>
+  the iPhone 17 Pro was <span class="highlight">reborn.</span><br>
+  Cracked leather. Bone charms.<br>
+  Skull buttons. War maps.</p>
+
+  <p style="font-size:1.4rem; color:#4aff4a; font-weight:700; margin-top:2rem;">
+    GOBLIN 5G was activated. ☠️<br><br>
+    But $GOBLIN?<br>
+    $GOBLIN is for everyone. 👺
+  </p>
+
+  <p style="color:#666; font-style:italic; margin-top:2rem;">
+    Welcome to the cave.
+  </p>
+</section>
+
+<section class="buy" id="buy">
+  <h2>👺 Buy $GOBLIN</h2>
+  <p>Available on Pump.fun — Solana Chain</p>
+  <div class="btn-group">
+    <a href="#" class="btn btn-primary">Buy on Pump.fun 👺</a>
+    <a href="https://x.com/MeltCoinBSC" target="_blank" class="btn btn-secondary">Follow on X</a>
+  </div>
+</section>
+
+<footer>
+  <p>$GOBLIN is a meme coin for entertainment purposes only. Always DYOR.</p>
+  <p style="margin-top:0.5rem;"><a href="https://x.com/MeltCoinBSC">Twitter</a></p>
+</footer>
+
+</body>
+</html>
